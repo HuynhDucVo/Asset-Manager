@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1022.0" style="-fx-background-color: B668A1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ExpiredAssetsController">
+       <children>
+          <TableView fx:id="table" layoutX="13.0" layoutY="122.0" prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: ECE9DA; -fx-border-color: black;">
+            <columns>
+              <TableColumn fx:id="asset_name" prefWidth="108.79998475313187" text="ASSET NAME" />
+              <TableColumn fx:id="category_col" prefWidth="119.99996948242188" text="CATEGORY" />
+                <TableColumn fx:id="location_col" prefWidth="111.20002746582031" text="LOCATION" />
+                <TableColumn fx:id="purchase_col" prefWidth="114.4000244140625" text="PURCHASE DATE" />
+                <TableColumn fx:id="value_col" prefWidth="173.0" text="PURCHASE VALUE" />
+                <TableColumn fx:id="exp_col" minWidth="0.0" prefWidth="200.0" text="WARRANTY EXPIRATION DATE" />
+            <TableColumn fx:id="description_col" prefWidth="166.0" text="DESCRIPTION" />
+            </columns>
+          </TableView>
+      <Label layoutX="14.0" layoutY="13.0" prefHeight="98.0" prefWidth="370.0" text="EXPIRED WARRANTY ASSETS">
+         <font>
+            <Font name="Trebuchet MS" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="933.0" layoutY="81.0" mnemonicParsing="false" onAction="#showAssetInfo" prefHeight="30.0" prefWidth="80.0" text="Show Info" />
+       </children>
+    </AnchorPane>
